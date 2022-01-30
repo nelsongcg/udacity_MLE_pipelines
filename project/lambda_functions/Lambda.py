@@ -41,7 +41,7 @@ from sagemaker.predictor import Predictor
 from sagemaker import Session
 
 # Fill this in with the name of your deployed model
-ENDPOINT = 'image-classification-2022-01-20-01-18-32-688'
+ENDPOINT = 'scones-classifier-1642727102'
 session = Session()
 
 
@@ -70,11 +70,10 @@ def lambda_handler(event, context):
     }
 
 
-
 import json
 import ast
 
-THRESHOLD = .93
+THRESHOLD = .88
 
 
 def lambda_handler(event, context):
